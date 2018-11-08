@@ -1,13 +1,1 @@
-# Setup
-title:               Octavi Pascual
-tagline:             'A Jekyll theme'
-description:         'Software engineer'
-url:                 http://lanyon.getpoole.com
-baseurl:             ''
-paginate:            5
-
-# About/contact
-author:
-  name:              Octavi Pascual
-  url:               https://www.linkedin.com/in/octavipascual/
-  email:             octavi94@gmail.com
+markdown: kramdown
