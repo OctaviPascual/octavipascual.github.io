@@ -26,9 +26,6 @@ a.menu__item:hover { color: inherit; border-color: hsl(45,98%,77%); border-width
 h1, h2 { font: 200 1em 'Fira Sans'; margin: 2.5em 0 0.5em; }
 pre, code { font: 0.95em/1.5em 'Fira Mono', monospace; }
 
-/*p > code { background: hsla(0,0%,100%,0.1); padding: 4px 6px; border-radius: 3px; }*/
-
-
 .post {
   width: 544px; margin: 15px auto;
 }
