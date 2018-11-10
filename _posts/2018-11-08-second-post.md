@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Second post!"
+category: blog
 ---
 
 # Second post
