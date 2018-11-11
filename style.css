@@ -13,6 +13,7 @@ body {
   text-rendering: optimizeLegibility;
   margin: 50px auto;
 }
+
 .page { width: 600px; margin: 0 auto; padding: 0 0 0 2px; }
 .page_wide { width: 810px; }
 
