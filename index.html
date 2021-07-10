@@ -6,15 +6,16 @@ title: Blog
 <div class="about">
   <div class="about_inner">
     <p>Hi, I'm Octavi!</p>
-    <p>I'm a Software Engineer and this is my personal blog. I just like to write about anything I am learning as I think it helps me to internalize concepts. Also it might help others.</p>
+    <p>I'm a Software Engineer and this is my personal blog. I just like to write about anything I am learning as I
+      think it helps me to internalize concepts. Also it might help others.</p>
     <div class="social-icons">
       <ul class="list-inline">
         <li><a href="https://www.linkedin.com/in/octavipascual/" target="_blank">
-          <i class="fa fa-linkedin"></i>
-        </a></li>
+            <i class="fa fa-linkedin"></i>
+          </a></li>
         <li><a href="https://github.com/OctaviPascual" target="_blank">
-          <i class="fa fa-github"></i>
-        </a></li>
+            <i class="fa fa-github"></i>
+          </a></li>
       </ul>
     </div>
   </div>
@@ -22,20 +23,28 @@ title: Blog
 
 <div class="post">
 
+  <h1>2021</h1>
+  {% for post in site.posts %}
+  {% assign year = post.date | date: "%-Y" %}
+  {% if year == "2021" and post.draft != true %}
+  <p><a href="{{ post.url }}">{{ post.title }}</a> <span class=date>{{ post.date | date: "%d/%m"}}</span>
+    {% endif %}
+    {% endfor %}
+
   <h1>2019</h1>
   {% for post in site.posts %}
-    {% assign year = post.date | date: "%-Y" %}
-    {% if year == "2019" and post.draft != true %}
-      <p><a href="{{ post.url }}">{{ post.title }}</a> <span class=date>{{ post.date | date: "%d/%m"}}</span>
+  {% assign year = post.date | date: "%-Y" %}
+  {% if year == "2019" and post.draft != true %}
+  <p><a href="{{ post.url }}">{{ post.title }}</a> <span class=date>{{ post.date | date: "%d/%m"}}</span>
     {% endif %}
-  {% endfor %}
+    {% endfor %}
 
   <h1>2018</h1>
   {% for post in site.posts %}
-    {% assign year = post.date | date: "%-Y" %}
-    {% if year == "2018" and post.draft != true %}
-      <p><a href="{{ post.url }}">{{ post.title }}</a> <span class=date>{{ post.date | date: "%d/%m"}}</span>
+  {% assign year = post.date | date: "%-Y" %}
+  {% if year == "2018" and post.draft != true %}
+  <p><a href="{{ post.url }}">{{ post.title }}</a> <span class=date>{{ post.date | date: "%d/%m"}}</span>
     {% endif %}
-  {% endfor %}
+    {% endfor %}
 
 </div>
